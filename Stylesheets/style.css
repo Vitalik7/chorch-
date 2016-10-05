@@ -1,0 +1,33 @@
+.nav{
+    background: #8B3626;
+    opacity: 0.7;
+}
+.nav li { float: left}
+.nav li a, .touch-menu{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav li a:hover,
+.touch-menu:hover{
+    color: #8B3626;
+
+}
+.nav li a:active{
+    color: black;
+
+}
+.touch-menu{
+    display: none;
+}
+
+
+.footer{
+    position: relative;
+    padding: 1% 6%;
+    top: 75px;
+    background: #FF6347;
+    color: white;
+}
+
+

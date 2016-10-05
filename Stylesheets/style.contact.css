@@ -1,0 +1,62 @@
+/* ------------------ contact -----------*/
+
+.contact{
+    text-align: center;
+    top: 75px;
+    position: relative;
+}
+.ask{
+    padding: 0% 3%;
+    float: left;
+    text-align: left;
+}
+.address{
+    float: left;
+    padding: 0% 3%;
+    text-align: left;
+}
+form input{
+    padding: 0% 1%;
+    margin: 5% 2%;
+    width: 22%;
+    height: 40px;
+}
+
+form textarea{
+    width: 49%;
+    padding: 1% 1%;
+    height: 150px;
+    resize: none;
+    float: none;
+}
+
+.pluso{
+    float: left;
+    position: absolute;
+    top: 120px;
+    right: 300px;
+}
+
+
+.contact button{
+    font-size: 22px;
+    margin: 2.5% 0%;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .3em 2em;
+    outline: none;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-color: #9FB6CD #000 #8B3626;
+    border-radius: 20px;
+    background: linear-gradient(#FF6347, #FF6347) #FF6347;
+    transition: 0.2s;
+}
+.contact button:hover { background: linear-gradient(#FF6347, #FF6347) #FF4500; }
+.contact button:active { background: linear-gradient(#8B3626, #8B3626) #8B3626; }
+.contact img{
+    width: 100%;
+}
+
+/* ------------------ end contact -----------*/

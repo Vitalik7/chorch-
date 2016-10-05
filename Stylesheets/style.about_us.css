@@ -1,0 +1,95 @@
+/* ------------------ about_us -----------*/
+
+.about_us{
+    position: relative;
+    padding: 0% 0%;
+    top:30px;
+    height: 700px;
+    text-align: center;
+}
+.about_us h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.text_aboutChorch{
+    padding: 4% 0%;
+    font-size: 17px;
+    text-align: center;
+
+}
+/*----------------------*/
+
+.box_3 {
+    width: 100%;
+    overflow: hidden;
+}
+.box {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    left: 9%;
+    width: 26%;
+}
+.box_3{
+    padding: 3% 6%;
+}
+.box_3 a{
+    text-decoration: none;
+    color: black;
+}
+.box_3 p{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.box_3 img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #D3D3D3;
+    text-decoration: none;
+
+}
+
+.box_3 img:hover{
+    opacity: 0.5;
+}
+.box_3 a:hover{
+
+    color: #FF6347;
+}
+.ask_pastor1{
+    position: relative;
+    float: right;
+    padding: 0% 2%;
+    top: 80px;
+    right: 80px;
+    color:#FF6347;
+
+
+}
+.ask_pastor1 a{
+    color: #FF6347;
+}
+.ask_pastor1 button{
+    display: inline-block;
+    outline: none;
+    padding: .7em 2em;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    border-color: #FF6347;
+    text-decoration: none;
+}
+.ask_pastor1 button:active{
+    background: #8B3626;
+    color: white;
+    border-color: #8B3626;
+
+}
+
+
+/* ------------------ end about_us -----------*/

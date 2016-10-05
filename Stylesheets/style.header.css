@@ -1,0 +1,179 @@
+
+.header{
+    width: 100%; /* Ширина блока */
+    height: 900px; /* Высота блока */
+    background: url(../images/chorch.jpg)  ;
+}
+.header span{
+    padding: 1% 1%;
+}
+.blogs_1 ul {
+    padding-left: 0; /*убираем отступы*/
+    margin: 0; /*убираем отступы*/
+    background:#8B3626; /*добавляем фон всему меню*/
+    color: white;
+    opacity: 0.8;
+    list-style: none; /*убираем маркеры списка*/
+
+}
+.blogs_1 h4{
+    float: left;
+    padding: 0% 3%;
+    margin: 1.2% 0%;
+
+
+}
+
+.blogs_1 a {
+    display: block;
+    padding:0px 15px; /*добавляем отступ*/
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    line-height:50px; /*ровняем меню по вертикали*/
+    background:#8B3626;/*добавляем фон к пункту меню*/
+    color: white; /*меняем цвет ссылок*/
+    font-family: arial; /*меняем шрифт*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+
+}
+.blogs_1 a:hover {
+    background:#FF6347;/*добавляем эффект при наведении*/
+
+}
+.blogs_1 li {
+    float: right; /*Размещаем список горизонтально для реализации меню*/
+}
+.blogs_1 button {
+    display: inline-block;
+    padding: .1em 1em;
+    margin: 8% -3%;
+    outline: none;
+    border-style: solid none;
+    border-color: #8B3626 #000 #8B3626  ;
+    border-radius: 15px;
+    background: linear-gradient(#8B3626, #8B3626) #8B3626;
+    color: white;
+    text-decoration: none;
+}
+.blogs_1 button:active { background: linear-gradient(#FF6347, #FF6347) #FF6347; }
+
+.blogs_2 ul {
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    height: 35px; /*задаем высоту*/
+    background:#9FB6CD; /*добавляем фон всему меню*/
+    list-style: none; /*убираем маркеры списка*/
+    opacity: 0.8;
+}
+
+.blogs_2 a {
+    display: block;
+    padding:0px 15px; /*добавляем отступ*/
+    line-height:35px; /*ровняем меню по вертикали*/
+    background:#9FB6CD;/*добавляем фон к пункту меню*/
+    color: black; /*меняем цвет ссылок*/
+    font-family: arial; /*меняем шрифт*/
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    border-right: 1px solid #9FB6CD; /*добавляем бордюр справа*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+
+}
+
+.blogs_2 li {
+    height: 35px;
+    float: right; /*Размещаем список горизонтально для реализации меню*/
+}
+.blogs_2 a{
+
+    height: 35px;
+}
+.blogs_2 a:active { background: #FF6347 }
+
+.blogs_2 button{
+    display: inline-block;
+    padding: .1em 2em;
+    margin: 2.5% 0%;
+    outline: none;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-color: #9FB6CD #000 #8B3626;
+    border-radius: 15px;
+    background: linear-gradient(#FF6347, #FF6347) #FF6347;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.blogs_2 button:hover { background: linear-gradient(#FF6347, #FF6347) #FF4500; }
+.blogs_2 button:active { background: linear-gradient(#8B3626, #8B3626) #8B3626; }
+
+.box1{
+    padding: 10% 0%;
+}
+.name{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.text{
+    margin: 2% 0%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.text span{
+    float: left;
+    width: 10%;
+    font-size: 60px;
+}
+.text span#right{
+    float: right;
+}
+.meeting_schedule{
+    position: absolute;
+    margin: 1% 25%;
+    width: 50%;
+    border-style: solid;
+    border-width: 3px;
+    background: black;
+    color: white;
+    font-family: Andale Mono;
+    text-align: center;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+.meeting_schedule h1{
+    font-family: Arnoldboecklin;
+}
+.btn_down button{
+    position: absolute;
+    display: inline-block;
+    padding: .4em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #9FB6CD #000 #8B3626;
+    border-radius: 25px;
+    background: linear-gradient(#FF6347, #FF6347) #FF6347;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.btn_down button:hover { background: linear-gradient(#FF6347, #FF6347) #FF4500; }
+.btn_down button:active { background: linear-gradient(#8B3626, #8B3626) #8B3626; }
+
+.btn_down{
+    float: right;
+    width: 46%;
+    overflow: auto;
+
+
+}
+.btn_down button{
+    bottom: 0px;
+    margin: -13% 0% ;
+}

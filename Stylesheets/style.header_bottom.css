@@ -1,0 +1,53 @@
+/* ------------------ header_bottom-----------*/
+.header_bottom{
+    font-size: 12px;
+}
+.header_bottom ul {
+    padding-left: 0; /*убираем отступы*/
+    margin: 0; /*убираем отступы*/
+    list-style: none; /*убираем маркеры списка*/
+    color: black;
+    opacity: 0.8;
+}
+.header_bottom h4{
+    position: absolute;
+    padding: 0% 3%;
+    margin: 1.2% 0%;
+}
+.header_bottom h4:active{
+    color: #FF6347;
+}
+.header_bottom a {
+    display: block;
+    padding:0px 20px; /*добавляем отступ*/
+    line-height:50px; /*ровняем меню по вертикали*/
+    color: black; /*меняем цвет ссылок*/
+    font-family: arial; /*меняем шрифт*/
+    font-size: 15px;
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+}
+.header_bottom a:hover{
+    color: #FF6347;
+    text-decoration: none;
+}
+.header_bottom a:active {
+    color:#FF6347;
+
+}
+.header_bottom li {
+    float: right; /*Размещаем список горизонтально для реализации меню*/
+}
+.header_bottom button {
+    display: inline-block;
+    position: relative;
+    padding: 0% 10%;
+    margin: 15% -3%;
+    right: 20px;
+    border-radius: 12px;
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+.header_bottom button:active {
+    color: white; }
+/* ------------------ end header_bottom-----------*/

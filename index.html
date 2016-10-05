@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.header.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.header_bottom.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.about_us.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.latest_news.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.contact.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.broadcasting.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style@media.css" >
+    <link rel="stylesheet" media="only screen and (max width:100%)" href="Stylesheets/style.css" >
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/js" href="JavaScript.js"/>
+    <!-- Свіжа збірка мінімізованих CSS -->
+    <link rel="stylesheet" media="screen" type="text/css" href="bootstrap-3.3.2-dist/css/bootstrap.min.css" >
+    <!-- Додаткові теми -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- Свіжа збірка мінімізованої JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <meta name="viewport" content="width-devicewidth, initial-scale-1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+    <title>Церква Благодаті</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var touch = $('.touch-menu');
+            var menu = $('.nav');
+
+            $(touch).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var wid = $(window).width();
+                if(wid > 760 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+
+
+        $(document).ready(function(){
+            var touch = $('.touch-menu1 ');
+            var menu = $('.nav1');
+
+            $(touch).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var wid = $(window).width();
+                if(wid > 760 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+        </script>
+</head>
+<body>
+<div class="header">
+    <a href="#"  class="touch-menu">  <span class="glyphicon glyphicon-menu-hamburger"></span> </a>
+    <nav>
+        <div class="blogs_1">
+            <ul class="nav">
+                <h4> ЦЕРКВА БЛАГОДАТІ </h4>
+
+                <script>
+                    function myFunction(button,clr) {
+                        button.style.background = clr;
+                    }
+                </script>
+                <li> | &#160;<button onclick="myFunction(this, '#FF6347')"> РУС </button>   &#8195;  <button onclick="myFunction(this, '#FF6347')" >УКР</button></li>
+                <li><a href="#">ТРАНСЛЯЦІЯ</a></li>
+                <li><a href="#">СЛУЖІННЯ</a></li>
+                <li><a href="#">ЗАХОДИ</a></li>
+                <li><a href="#">АРХІВ</a></li>
+                <li><a href="#">КОНТАКТИ &#160; </a></li>
+                <li><a href="#">ПРО НАС</a></li>
+            </ul>
+        </div>
+
+        <div class="blogs_2">
+            <ul class="nav">
+                <li><button> Пожертвувати</button> </li>
+                <li><a href="#"> Останні новини </a> </li>
+                <li><a href="#"> Молитовні потреби  </a> </li>
+            </ul>
+        </div> <!-- end blogs_2-->
+    </nav>
+    <div class="box1">
+        <div class="name">
+            <h1> ЦЕРКВА БЛАГОДАТІ </h1>
+        </div> <!-- end name-->
+        <div class="text">
+            <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inicidunt ut labore </br>
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </br>
+                nisi ut aliquip ex ea commodo consequat. </p>
+            <span  class="glyphicon glyphicon-triangle-left"></span>
+            <span id="right" class="glyphicon glyphicon-triangle-right"></span>
+        </div> <!-- end text-->
+        <div class="meeting_schedule">
+            <h2> РОЗКЛАД ЗІБРАНЬ </h2>
+            </br>
+            <h3> НЕДІЛЯ 10:00 </h3>
+            <h3> СЕРЕДА 17:00 </h3>
+            <h3> МОЛОДІЖКА 18:00 </h3>
+            <h3> (щонеділі) </h3>
+        </div> <!-- end meeting_schedule-->
+        <div class="btn_down">
+            <button > ДЕТАЛЬНІШЕ <p class="glyphicon glyphicon-triangle-bottom"></p> </button>
+        </div> <!-- end btn-->
+    </div> <!-- end box-->
+</div> <!-- end header -->
+<div class="header_bottom">
+    <a href="#"  class="touch-menu1">  <span class="glyphicon glyphicon-menu-hamburger"></span> </a>
+    <nav>
+        <ul class="nav1" >
+            <li>   &#160;<button id="rus" onclick="myFunction(this, '#FF6347')"> РУС </button>   &#8195;  <button id="ukr" onclick="myFunction(this, '#FF6347')" >УКР</button></li>
+            <script>
+                function myFunction(button,clr) {
+                    button.style.background = clr;
+                }
+            </script>
+            <li><a href="#">КОНТАКТИ &#160; | </a></li>
+            <li><a href="#">АРХІВ</a></li>
+            <li><a href="#">ЗАХОДИ</a></li>
+            <li><a href="#">СЛУЖІННЯ</a></li>
+            <li><a href="#">ТРАНСЛЯЦІЯ</a></li>
+            <li><a href="#">ПРО НАС</a></li>
+            <a href="#"> <h4> ЦЕРКВА БЛАГОДАТІ </h4> </a>
+        </ul>
+    </nav>
+</div><!-- end header bottom-->
+<div class="about_us">
+    <h1> Про нас </h1>
+
+    <div class="text_aboutChorch">
+        <p> Triare s a software company providing services and solution for businesses and startups. The company with a flexy- <br>
+            ble cooperation format provides a wide spectrum of web and mobile development solution from simple app to a <br>
+            complex e-commerce system, client+server application and other. </p>
+    </div><!-- end text_aboutChorch-->
+    <div class="box_3">
+        <div class="box">
+            <a  href="#"  > <img id="img_1" src=" images/slyzhinna.png"> <br> <p> Служіння </p> </a>
+        </div>
+        <div class="box">
+            <a  href="#"> <img id="img_2" src="images/zhatva.jpeg"> <br> <p> Заходи </p> </a>
+        </div>
+        <div class="box">
+            <a  href="#"> <img id="img_3" src="images/slyzhinna.png"> <p> Архів </p> </a>
+        </div>
+    </div> <!-- end box_3 -->
+    <div class="ask_pastor1">
+        <a href="#"> <button> ЗАПИТАННЯ ПАСТОРУ </button> </a>
+    </div><!-- end ask_pastor-->
+</div><!-- end about_us-->
+<div class="broadcasting">
+    <h1> Трансляція </h1>
+    <p> Ви можете переглянути служіння <br>
+        або великі заходи церкви в режимі <a href="#"> онлайн </a> </p>
+
+    <iframe  src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
+
+    <div class="btn_date">
+        <h5> 06.07.16 </h5>
+        <p class="view" > Переглянуто 26 разів  </p>
+        <p> Вечірнє Богослужіння церкви Благодаті </p>
+    </div>
+    <div class="container_video">
+        <h3> Рекомендовані відео </h3>
+
+        <div class="small_1_video">
+            <iframe  class="video_1" src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
+            <p>Вечірнє Богослужіння </br> церкви Благодаті </br>
+            <p class="view_1"> 60 переглядів </br> <p class="date"> 06.07.16 </p>  </p></p>
+        </div>
+        <div class="small_2_video">
+            <iframe  class="video_2" src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
+            <p>Вечірнє Богослужіння </br> церкви Благодаті</br>
+            <p class="view_2"> 60 переглядів </br> </p> </p></div>
+        <div class="small_3_video">
+            <iframe  class="video_3" src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
+            <p>Вечірнє Богослужіння </br> церкви Благодаті</br>
+            <p class="view_3"> 60 переглядів</p></p></div>
+    </div><!-- end container_video-->
+    <div class="ask_pastor2">
+        <a href="#">   <button> ЗАПИТАННЯ ПАСТОРУ </button> </a>
+    </div><!-- end ask_pastor-->
+    <h4> <a href="#"> Всі трансляції</a> </h4>
+</div> <!-- end broadcasting-->
+<div class="latest_news">
+    <h3> Останні новини </h3>
+    <div class="news">
+        <div class="new">
+            <img src="images/arhiv.jpg">
+            <p> Вечірнє Богослужіння <br> церкви Благодаті </p>
+            <a href="#"> Описание новости </a>
+            <h5> 06.07.16 </h5>
+        </div>
+        <div class="new">
+            <img src="images/arhiv.jpg">
+            <p> Вечірнє Богослужіння <br> церкви Благодаті </p>
+            <a href="#"> Описание новости </a>
+            <h5> 06.07.16 </h5>
+        </div>
+        <div class="new">
+            <img src="images/arhiv.jpg">
+            <p> Вечірнє Богослужіння <br> церкви Благодаті </p>
+            <a href="#"> Описание новости </a>
+            <h5> 06.07.16 </h5>
+        </div>
+    </div>
+</div> <!-- end latest_news-->
+<div class="contact">
+    <h1> Контакти </h1>
+    <div class="ask">
+        <h3> Запитання пастору </h3>
+        <p> Ви маєте змогу запитати пастора церкви <br>
+            Евтушенко П. А. в електронному вигляді <br>
+            та отримати відповідь в найближчий час. </p>
+        <div class="address">
+            <h3> Адреса </h3>
+            <h5> Церква Благодаті </h5>
+            <p> Черкаси, вул Верхня Горова 129 <br>
+                Зупинка Пастерівська  <br>
+                (0472) 37-33-02 &#160;  (063) 040-12-12 </p>
+        </div>
+    </div>
+    <form class="forms" >
+        <input class="glyphicon glyphicon-envelope" type="text" id="name_"  placeholder="І'мя" >
+        <span class="glyphicon glyphicon-envelope"> </span><input type="text" id="email" placeholder="Email " >
+        <span class="glyphicon glyphicon-pencil" ></span>
+        <textarea type="text" placeholder="Повідомлення"  ></textarea>
+
+
+
+        <script type="text/javascript">(function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+            }})();</script>
+        <div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="facebook,vkontakte"></div>
+
+    </form>
+    <button> <span class="glyphicon glyphicon-envelope"></span> &#160;  НАДІСЛАТИ </button>
+    <div id="map" style="width: 100%; height: 450px">
+        <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap,
+                    myPlacemark;
+
+            function init(){
+                myMap = new ymaps.Map("map", {
+                    center: [49.435915, 32.078385],
+                    zoom: 17
+                });
+
+                myPlacemark = new ymaps.Placemark([49.435915, 32.078385], {
+                    hintContent: 'Церква Благодаті',
+                    balloonContent: 'Церква Благодаті'
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
+    </div>
+</div><!-- end contact-->
+<div class="footer">
+    <h4>  Розклад Зібрань </h4>
+    <p> Неділя 10:00 <br>
+        Середа 18:00 <br>
+        Молодіжка 18:00 (щонеділі)</p>
+    <p> 	&#169; 2016 Церква Благодаті. Всі права застережено </p>
+</div><!-- end footer-->
+
+</body>
+</html>
