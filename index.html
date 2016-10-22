@@ -9,10 +9,10 @@
     <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.latest_news.css" />
     <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.contact.css" />
     <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style.broadcasting.css" />
-    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/style@media.css" >
+    <link rel="stylesheet" media="screen" type="text/css" href="Stylesheets/media.css" >
+    <script type="text/javascript" src="JavaScript.js"></script>
     <link rel="stylesheet" media="only screen and (max width:100%)" href="Stylesheets/style.css" >
     <script type="text/javascript" src="bootstrap.js"></script>
-    <link rel="stylesheet" type="text/js" href="JavaScript.js"/>
     <!-- Свіжа збірка мінімізованих CSS -->
     <link rel="stylesheet" media="screen" type="text/css" href="bootstrap-3.3.2-dist/css/bootstrap.min.css" >
     <!-- Додаткові теми -->
@@ -59,6 +59,20 @@
                 }
             });
         });
+
+
+        var IMG = document.querySelectorAll('#video12 img'),
+                IFRAME = document.querySelector('#video12 iframe');
+        for (var i = 0; i < IMG.length; i++) {
+            IMG[i].onclick = function() {
+                var idIMG = this.src.replace(/http...img.youtube.com.vi.([\s\S]*?).1.jpg/g, '$1');
+                IFRAME.src = 'http://www.youtube.com/embed/' + idIMG + '?rel=0';
+                if(this.dataset.end) IFRAME.src = IFRAME.src.replace(/([\s\S]*)/g, '$1&end=' + this.dataset.end);
+                if(this.dataset.start) IFRAME.src = IFRAME.src.replace(/([\s\S]*)/g, '$1&start=' + this.dataset.start);
+                this.style.backgroundColor='#555';
+            }
+        }
+
         </script>
 </head>
 <body>
@@ -161,37 +175,34 @@
 </div><!-- end about_us-->
 <div class="broadcasting">
     <h1> Трансляція </h1>
-    <p> Ви можете переглянути служіння <br>
+    <p class="p_text"> Ви можете переглянути служіння <br>
         або великі заходи церкви в режимі <a href="#"> онлайн </a> </p>
-
-    <iframe  src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
-
-    <div class="btn_date">
-        <h5> 06.07.16 </h5>
-        <p class="view" > Переглянуто 26 разів  </p>
-        <p> Вечірнє Богослужіння церкви Благодаті </p>
-    </div>
-    <div class="container_video">
-        <h3> Рекомендовані відео </h3>
-
-        <div class="small_1_video">
-            <iframe  class="video_1" src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
-            <p>Вечірнє Богослужіння </br> церкви Благодаті </br>
-            <p class="view_1"> 60 переглядів </br> <p class="date"> 06.07.16 </p>  </p></p>
+    <h3> Рекомендовані відео </h3>
+    <div class="video12">
+        <iframe src="https://www.youtube.com/embed/CMnmsaJ6qew/xFa2_PVMeDQ?rel=0" allowfullscreen="" frameborder="0"></iframe>
+        <div class="video_small">
+            <img src="http://img.youtube.com/vi/CMnmsaJ6qew/2.jpg" tabindex="2" />
+            <img src="http://img.youtube.com/vi/xFa2_PVMeDQ/1.jpg" tabindex="2"/>
+            <img src="http://img.youtube.com/vi/WFhzzJjRncI/1.jpg" tabindex="2"/>
         </div>
-        <div class="small_2_video">
-            <iframe  class="video_2" src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
-            <p>Вечірнє Богослужіння </br> церкви Благодаті</br>
-            <p class="view_2"> 60 переглядів </br> </p> </p></div>
-        <div class="small_3_video">
-            <iframe  class="video_3" src="https://www.youtube.com/embed/CMnmsaJ6qew" frameborder="0" allowfullscreen></iframe>
-            <p>Вечірнє Богослужіння </br> церкви Благодаті</br>
-            <p class="view_3"> 60 переглядів</p></p></div>
-    </div><!-- end container_video-->
-    <div class="ask_pastor2">
-        <a href="#">   <button> ЗАПИТАННЯ ПАСТОРУ </button> </a>
-    </div><!-- end ask_pastor-->
-    <h4> <a href="#"> Всі трансляції</a> </h4>
+
+    </div>
+
+
+    <script>
+        var IMG = document.querySelectorAll('.video12 img'),
+                IFRAME = document.querySelector('.video12 iframe');
+        for (var i = 0; i < IMG.length; i++) {
+            IMG[i].onclick = function() {
+                var idIMG = this.src.replace(/http...img.youtube.com.vi.([\s\S]*?).1.jpg/g, '$1');
+                IFRAME.src = 'http://www.youtube.com/embed/' + idIMG + '?rel=0&autoplay=1';
+                if(this.dataset.end) IFRAME.src = IFRAME.src.replace(/([\s\S]*)/g, '$1&end=' + this.dataset.end);
+                if(this.dataset.start) IFRAME.src = IFRAME.src.replace(/([\s\S]*)/g, '$1&start=' + this.dataset.start);
+                this.style.backgroundColor='#555';
+            }
+        }
+    </script>
+
 </div> <!-- end broadcasting-->
 <div class="latest_news">
     <h3> Останні новини </h3>
@@ -231,14 +242,16 @@
                 (0472) 37-33-02 &#160;  (063) 040-12-12 </p>
         </div>
     </div>
-    <form class="forms" >
+    <div class="mail">
+    <form  >
         <input class="glyphicon glyphicon-envelope" type="text" id="name_"  placeholder="І'мя" >
-        <span class="glyphicon glyphicon-envelope"> </span><input type="text" id="email" placeholder="Email " >
-        <span class="glyphicon glyphicon-pencil" ></span>
-        <textarea type="text" placeholder="Повідомлення"  ></textarea>
+        <!-- <span class="glyphicon glyphicon-envelope"> </span> -->
+        <input type="text" id="email" placeholder="Email">
+        <!-- <span class="glyphicon glyphicon-pencil" ></span>-->
+        <textarea type="text" placeholder="Повідомлення"></textarea>
 
-
-
+    </form>
+    </div>
         <script type="text/javascript">(function() {
             if (window.pluso)if (typeof window.pluso.start == "function") return;
             if (window.ifpluso==undefined) { window.ifpluso = 1;
@@ -250,7 +263,7 @@
             }})();</script>
         <div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="facebook,vkontakte"></div>
 
-    </form>
+
     <button> <span class="glyphicon glyphicon-envelope"></span> &#160;  НАДІСЛАТИ </button>
     <div id="map" style="width: 100%; height: 450px">
         <script type="text/javascript">
@@ -281,6 +294,5 @@
         Молодіжка 18:00 (щонеділі)</p>
     <p> 	&#169; 2016 Церква Благодаті. Всі права застережено </p>
 </div><!-- end footer-->
-
 </body>
 </html>

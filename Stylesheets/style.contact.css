@@ -8,6 +8,7 @@
 .ask{
     padding: 0% 3%;
     float: left;
+    width: 30%;
     text-align: left;
 }
 .address{
@@ -15,19 +16,26 @@
     padding: 0% 3%;
     text-align: left;
 }
+.mail{
+    width: 63%;
+    float: right;
+}
 form input{
+    float: left;
     padding: 0% 1%;
-    margin: 5% 2%;
-    width: 22%;
+    margin: 5% 0%;
+    width: 40%;
     height: 40px;
 }
-
+.mail form input #email{
+    float: right;
+}
 form textarea{
-    width: 49%;
+    float: left;
+    width: 81%;
     padding: 1% 1%;
     height: 150px;
     resize: none;
-    float: none;
 }
 
 .pluso{

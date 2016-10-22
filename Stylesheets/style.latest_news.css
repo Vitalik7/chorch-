@@ -1,24 +1,19 @@
 /* ------- latest news ----------------- */
 
 .latest_news{
-    background: #FF6347;
-    text-align: center;
-    color: white;
     margin: -2% 0%;
+    background: #FF6347;
+    color: white;
+    text-align: center;
 }
 .latest_news h3{
     font-size: 30px;
     padding: 3% 0%;
-
 }
 .news{
     height: 200px;
     width: 100%;
-
-
 }
-
-
 .new{
     display: inline-block;
     height: auto;
@@ -30,8 +25,6 @@
     width: 26%;
     position: relative;
     left: 120px;
-
-
 }
 .new img{
     display: inline-block;
@@ -72,3 +65,21 @@
 
 
 /* ------- end latest news ----------------- */
+
+@media screen and (max-width: 1160px) {
+    .latest_news{
+        height: 450px;
+    }
+    .new{
+        width: 40%;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 1064px) {
+    .latest_news{
+        height: 620px;
+    }
+    .new{
+        width: 50%;
+    }
+}

@@ -24,7 +24,6 @@
 
 .box_3 {
     width: 100%;
-    overflow: hidden;
 }
 .box {
     position: relative;
@@ -93,3 +92,49 @@
 
 
 /* ------------------ end about_us -----------*/
+
+/*-------------------- media-----------------*/
+@media screen and (max-width: 1016px){
+    .about_us h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    .about_us p{
+        width: 100%;
+        font-size: 18px;
+    }
+    .text_aboutChorch{
+        width: auto;
+        height: auto;
+    }
+    .box{
+        width:  35%;
+    }
+    .ask_pastor1 button{
+        margin-right: 100px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .box{
+        float: none;
+        width: 60%;
+        margin-left: 50px;
+    }
+    .about_us{
+        height: auto;
+        min-height: 1250px;
+    }
+    .ask_pastor1 button{
+        position: static;
+        
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .box{
+        width: 80%;
+        margin: 0;
+    }
+}
