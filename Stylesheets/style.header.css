@@ -2,7 +2,7 @@
 .header{
     width: 100%; /* Ширина блока */
     height: 900px; /* Высота блока */
-    background: url(../images/chorch.jpg)  ;
+    background: url(../images/chorch.jpg);
 }
 .header span{
     padding: 1% 1%;
@@ -12,7 +12,6 @@
     margin: 0; /*убираем отступы*/
     background:#8B3626; /*добавляем фон всему меню*/
     color: white;
-    opacity: 0.8;
     list-style: none; /*убираем маркеры списка*/
 
 }
@@ -64,7 +63,6 @@
     height: 35px; /*задаем высоту*/
     background:#9FB6CD; /*добавляем фон всему меню*/
     list-style: none; /*убираем маркеры списка*/
-    opacity: 0.8;
 }
 
 .blogs_2 a {
@@ -134,9 +132,8 @@
     float: right;
 }
 .meeting_schedule{
-    position: absolute;
-    margin: 1% 25%;
     width: 50%;
+    margin: 0% 25%;
     border-style: solid;
     border-width: 3px;
     background: black;
@@ -149,10 +146,12 @@
 .meeting_schedule h1{
     font-family: Arnoldboecklin;
 }
-.btn_down button{
-    position: absolute;
+.box1 button{
+    position: relative;
     display: inline-block;
     padding: .4em 2em;
+    margin-left: 43%;
+    margin-top: 10%;
     outline: none;
     border-width: 2px 0;
     border-style: solid none;
@@ -163,17 +162,203 @@
     text-align: center;
     text-decoration: none;
 }
-.btn_down button:hover { background: linear-gradient(#FF6347, #FF6347) #FF4500; }
-.btn_down button:active { background: linear-gradient(#8B3626, #8B3626) #8B3626; }
+.box1 button:hover { background: linear-gradient(#FF6347, #FF6347) #FF4500; }
+.box1 button:active { background: linear-gradient(#8B3626, #8B3626) #8B3626; }
 
-.btn_down{
-    float: right;
-    width: 46%;
-    overflow: auto;
+
+
+/*------  max-width:1016px   ------*/
+@media screen and (max-width:1016px){
+    .nav{
+        display: none;
+    }
+    .nav li{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .nav li a {
+
+        border-left: 3px solid transparent;
+        background: #FF6347;
+        color: white;
+    }
+    .nav li a:hover {
+        background: #FF6347;
+        color: #444;
+        border-left: 3px solid #8B3626;
+    }
+
+    .touch-menu {display: block;}
+
+    .blogs_1 ul{
+        height: auto;
+
+    }
+    .blogs_1 li{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .blogs_1 li a{
+        float: inherit;
+        width: 100%;
+        height: auto;
+    }
+    .blogs_1 li button{
+        margin: 4px;
+    }
+    .blogs_1 h4{
+        width: 100%;
+        padding: 2% 0%;
+        text-align: center;
+        background: #8B3626;
+    }
+    .blogs_2 li{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: 0;
+    }
+    .blogs_2 ul{
+        float: none;
+        height: 105px;
+    }
+    .blogs_2 li a{
+        float: none;
+    }
+    .blogs_2 button{
+        margin: 1% 0%;
+    }
+
+    .name h1{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .meeting_schedule{
+        height: auto;
+    }
+    .meeting_schedule h2{
+        font-size: 22px
+    }
+    .meeting_schedule h3{
+        font-size: 20px;
+    }
 
 
 }
-.btn_down button{
-    bottom: 0px;
-    margin: -13% 0% ;
+@media screen and  (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .nav li {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav li a {
+
+        border-left: 3px solid transparent;
+        background: #FF6347;
+        color: white;
+    }
+
+    .nav li a:hover {
+        background: #FF6347;
+        color: #444;
+        border-left: 3px solid #8B3626;
+    }
+
+    .touch-menu {
+        display: block;
+    }
+
+    .blogs_1 ul {
+        height: auto;
+    }
+
+    .blogs_1 li {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+
+    .blogs_1 li button {
+        margin: 1% 1%;
+    }
+
+    .blogs_1 h4 {
+        width: 100%;
+        padding: 2% 0%;
+        margin: 0;
+        background: #8B3626;
+        text-align: center;
+    }
+
+    .blogs_2 li {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+
+    .blogs_2 li a {
+        float: none;
+    }
+    .blogs_2 ul {
+        height: auto;
+    }
+    .blogs_2 button{
+        margin: 1% 0%;
+    }
+    .box1 button{
+        margin-left: 40%;
+    }
+    .name h1 {
+        font-size: 27px;
+    }
+
+    .header span.glyphicon-triangle-left {
+        font-size: 40px;
+    }
+
+    .header span#right {
+        font-size: 40px;
+    }
+
+    .meeting_schedule {
+        width: 70%;
+        margin: 0% 16%;
+    }
+    .meeting_schedule h3{
+        font-size: 18px;
+    }
+    .btn_down button {
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 500px ) {
+    .box1 button{
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 320px ) {
+    .meeting_schedule h2{
+        font-size: 15px;
+    }
+    .meeting_schedule h3{
+        font-size: 15px;
+    }
+    .box1 button{
+        margin-left: 22%;
+    }
 }

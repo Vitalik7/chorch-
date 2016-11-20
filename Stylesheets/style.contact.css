@@ -27,6 +27,11 @@ form input{
     width: 40%;
     height: 40px;
 }
+input#email{
+    position: relative;
+    left: 2%;
+    width: 39%
+}
 .mail form input #email{
     float: right;
 }
@@ -40,8 +45,7 @@ form textarea{
 
 .pluso{
     float: left;
-    position: absolute;
-    top: 120px;
+    position: relative;
     right: 300px;
 }
 
@@ -68,3 +72,29 @@ form textarea{
 }
 
 /* ------------------ end contact -----------*/
+
+
+
+@media screen and (max-width: 768px){
+    .ask{
+        position: relative;
+        width: 100%;
+    }
+
+    .mail{
+        position: relative;
+        width: 90%;
+        margin: 0% 5%;
+        float: left;
+    }
+    .contact button{
+        position: relative;
+        right: 70px;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:769px) and (max-width: 980px) {
+    #map{
+        margin-top: 10%;
+    }
+}

@@ -1,53 +1,122 @@
 /* ------------------ header_bottom-----------*/
-.header_bottom{
-    font-size: 12px;
+
+
+
+.nav_2{
+    opacity: 0.7;
 }
-.header_bottom ul {
+.nav_2 li { float: left}
+.nav_2 li a, .touch-menu_2{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav_2 li a:hover,
+.touch-menu_2:hover{
+    color: #8B3626;
+
+}
+.nav_2 li a:active{
+    color: black;
+
+}
+.touch-menu_2{
+    display: none;
+}
+
+.blog_1 ul {
     padding-left: 0; /*убираем отступы*/
     margin: 0; /*убираем отступы*/
-    list-style: none; /*убираем маркеры списка*/
-    color: black;
+    color: white;
     opacity: 0.8;
+    list-style: none; /*убираем маркеры списка*/
+
 }
-.header_bottom h4{
-    position: absolute;
+.blog_1 h4{
+    float: left;
     padding: 0% 3%;
     margin: 1.2% 0%;
+    color: black;
 }
-.header_bottom h4:active{
-    color: #FF6347;
-}
-.header_bottom a {
+
+.blog_1 a {
     display: block;
-    padding:0px 20px; /*добавляем отступ*/
+    padding:0px 15px; /*добавляем отступ*/
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
     line-height:50px; /*ровняем меню по вертикали*/
     color: black; /*меняем цвет ссылок*/
     font-family: arial; /*меняем шрифт*/
-    font-size: 15px;
-    text-decoration: none; /*убираем подчеркивание текста ссылок*/
-}
-.header_bottom a:hover{
-    color: #FF6347;
-    text-decoration: none;
-}
-.header_bottom a:active {
-    color:#FF6347;
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
 
 }
-.header_bottom li {
+.blog_1 a:hover {
+   color:#FF6347;
+    text-decoration: none;
+}
+.blog_1 a:active{
+    text-decoration: none;
+}
+.blog_1 li {
     float: right; /*Размещаем список горизонтально для реализации меню*/
 }
-.header_bottom button {
+.blog_1 button {
     display: inline-block;
-    position: relative;
-    padding: 0% 10%;
-    margin: 15% -3%;
-    right: 20px;
-    border-radius: 12px;
+    padding: .1em 1em;
+    margin: 8% -3%;
     outline: none;
+    border-style: solid none;
+    border-radius: 15px;
+    background: transparent;
     color: black;
     text-decoration: none;
 }
-.header_bottom button:active {
-    color: white; }
+.blog_1 button:active { background: linear-gradient(#FF6347, #FF6347) #FF6347; }
+
+
+
 /* ------------------ end header_bottom-----------*/
+
+
+/*------  max-width:1016px   ------*/
+@media screen and (max-width:1016px){
+
+
+
+    .nav_2{
+        display: none;
+    }
+    .nav_2 li{
+        float: none;
+        width: 100%;
+        height: auto;
+        background: gray;
+    }
+    .nav_2 li a {
+
+        border-left: 3px solid transparent;
+        background: #FF6347;
+        color: white;
+    }
+    .nav_2 li a:hover {
+        background: #FF6347;
+        color: #444;
+        border-left: 3px solid #8B3626;
+    }
+
+    .touch-menu_2 {display: block;}
+    .blog_1 h4{
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+    .blog_1 button{
+        margin: 0% 0%;
+    }
+}
+
+
+@media screen and  (max-width: 768px) {
+
+}

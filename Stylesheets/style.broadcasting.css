@@ -1,7 +1,7 @@
 /* ------------------ broadcasting -----------*/
 .broadcasting {
     padding: 4% 0%;
-    height: auto;
+    height: 890px;
     background: #F5F5F5;
     text-align: center;
 }
@@ -26,21 +26,10 @@
 .broadcasting h4 a{
     position: relative;
     width: 100%;
-    float: left;
-    bottom: 50px;
     color: #FF6347;
     font-size: 25px;
     text-align: center;
     text-decoration: none;
-
-}
-.broadcasting h5 {
-    position: relative;
-    float: left;
-    padding: 0% 4%;
-    width: 57%;
-    height: 356px;
-    left: 54px;
 }
 .broadcasting h3{
     float: right;
@@ -48,14 +37,50 @@
     width: 39%;
     text-align: left;
 }
+
+.btn_date{
+    position: relative;
+    width: 49%;
+    margin-left: 10%;
+    bottom: 20px;
+}
+.btn_date p {
+    position: relative;
+    float: left;
+    left: 10px;
+    opacity: 1;
+    font-size: 14px;
+}
+.btn_date p.view{
+    position: relative;
+    float: right;
+    opacity: 0.7; }
+.btn_date h5{
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: .1em 1em;
+    bottom: 9px;
+    outline: none;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-radius: 15px;
+    background: linear-gradient(#FF6347, #FF6347) #FF6347;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
 .description{
-    width: 30%;
+    width: 10%;
+    float: right;
 
 }
 .one{
-    position: absolute;
+    position: static;
     float: right;
-    width: 30%;
+    width: 43%;
+    height: 125px;
 }
 .one p{
     float: left;
@@ -75,7 +100,7 @@
     display: inline-block;
     position: relative;
     float: left;
-    width: 43%;
+    width: 80px;;
     padding: 0% 3%;
     outline: none;
     bottom: 16px;
@@ -88,8 +113,12 @@
     transition: 0.2s;
 }
 .two{
+    position: relative;
     float: right;
-    width: 30%;
+    margin: 3% 0%;
+    width: 45%;
+    height: 125px;
+
 }
 .two p{
     float: left;
@@ -109,7 +138,7 @@
     display: inline-block;
     position: relative;
     float: left;
-    width: 43%;
+    width: 80px;
     padding: 0% 3%;
     outline: none;
     bottom: 16px;
@@ -122,8 +151,12 @@
     transition: 0.2s;
 }
 .three{
+    position: relative;
     float: right;
-    width: 30%;
+    width: 45%;
+    height: 125px;
+
+
 }
 .three p{
     float: left;
@@ -143,7 +176,7 @@
     display: inline-block;
     position: relative;
     float: left;
-    width: 43%;
+    width: 80px;
     padding: 0% 3%;
     outline: none;
     bottom: 16px;
@@ -155,7 +188,12 @@
     text-decoration: none;
     transition: 0.2s;
 }
+.img{
+    position: relative;
+    width: 100%;
+    height: 390px;
 
+}
 .video12 {
     position: relative;
 }
@@ -163,18 +201,19 @@
     float: left;
     margin-left: 10%;
     width: 50%;
-    height: 400px;
+    height: 420px;
 }
 .video_small{
     top: 0;
     right: 0;
-    width: 160px;
+    width: 316px;
     height: 100%;
     padding: 5px;
     overflow-y: auto;
 }
 .video12 img {
-    width:100%;
+    width:160px;
+    float: left;
     padding: 5px;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -189,5 +228,53 @@
 .video12 img:focus {
     opacity: .2;
 }
+.broadcasting button{
+    display: inline-block;
+    position: relative;
+    float: right;
+    outline: none;
+    padding: .7em 2em;
+    right: 8%;
+    bottom: 15px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    border-color: #FF6347;
+    text-decoration: none;
+}
+@media screen and (max-width: 790px) {
+    .broadcasting {
+        height: 1200px;
+    }
+    .video12 iframe{
+        width: 80%;
+    }
+    .broadcasting h3{
+        width: 80%;
+        margin: 0% 10%;
+        margin-top: 40px;
+    }
+    .video_small{
+        width: 316px;
+        margin-left: 9%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .broadcasting {
+        height: 1300px;
+    }
+    .broadcasting button{
+        margin-top: 5%;
+    }
 
-
+}
+@media screen and (min-width: 320px)and (max-width: 435px) {
+    .broadcasting h3{
+        width: 95%;
+        margin: 0;
+        margin-top: 40px;
+    }
+    .video_small{
+        margin-left: 0%;
+    }
+}

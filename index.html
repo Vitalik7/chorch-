@@ -45,8 +45,8 @@
 
 
         $(document).ready(function(){
-            var touch = $('.touch-menu1 ');
-            var menu = $('.nav1');
+            var touch = $('.touch-menu_2 ');
+            var menu = $('.nav_2');
 
             $(touch).on('click', function(e) {
                 e.preventDefault();
@@ -76,7 +76,7 @@
         </script>
 </head>
 <body>
-<div class="header">
+<div class="navbar">
     <a href="#"  class="touch-menu">  <span class="glyphicon glyphicon-menu-hamburger"></span> </a>
     <nav>
         <div class="blogs_1">
@@ -106,6 +106,8 @@
             </ul>
         </div> <!-- end blogs_2-->
     </nav>
+</div><!-- end navbar -->
+<div class="header">
     <div class="box1">
         <div class="name">
             <h1> ЦЕРКВА БЛАГОДАТІ </h1>
@@ -125,29 +127,32 @@
             <h3> МОЛОДІЖКА 18:00 </h3>
             <h3> (щонеділі) </h3>
         </div> <!-- end meeting_schedule-->
-        <div class="btn_down">
+
             <button > ДЕТАЛЬНІШЕ <p class="glyphicon glyphicon-triangle-bottom"></p> </button>
-        </div> <!-- end btn-->
+
     </div> <!-- end box-->
 </div> <!-- end header -->
 <div class="header_bottom">
-    <a href="#"  class="touch-menu1">  <span class="glyphicon glyphicon-menu-hamburger"></span> </a>
-    <nav>
-        <ul class="nav1" >
-            <li>   &#160;<button id="rus" onclick="myFunction(this, '#FF6347')"> РУС </button>   &#8195;  <button id="ukr" onclick="myFunction(this, '#FF6347')" >УКР</button></li>
+<a href="#"  class="touch-menu_2">  <span class="glyphicon glyphicon-menu-hamburger"></span> </a>
+<nav>
+    <div class="blog_1">
+        <ul class="nav_2">
+            <h4> ЦЕРКВА БЛАГОДАТІ </h4>
+
             <script>
                 function myFunction(button,clr) {
                     button.style.background = clr;
                 }
             </script>
-            <li><a href="#">КОНТАКТИ &#160; | </a></li>
-            <li><a href="#">АРХІВ</a></li>
-            <li><a href="#">ЗАХОДИ</a></li>
-            <li><a href="#">СЛУЖІННЯ</a></li>
+            <li> | &#160;<button onclick="myFunction(this, '#FF6347')"> РУС </button>   &#8195;  <button onclick="myFunction(this, '#FF6347')" >УКР</button></li>
             <li><a href="#">ТРАНСЛЯЦІЯ</a></li>
+            <li><a href="#">СЛУЖІННЯ</a></li>
+            <li><a href="#">ЗАХОДИ</a></li>
+            <li><a href="#">АРХІВ</a></li>
+            <li><a href="#">КОНТАКТИ</a></li>
             <li><a href="#">ПРО НАС</a></li>
-            <a href="#"> <h4> ЦЕРКВА БЛАГОДАТІ </h4> </a>
         </ul>
+    </div>
     </nav>
 </div><!-- end header bottom-->
 <div class="about_us">
@@ -177,18 +182,35 @@
     <h1> Трансляція </h1>
     <p class="p_text"> Ви можете переглянути служіння <br>
         або великі заходи церкви в режимі <a href="#"> онлайн </a> </p>
-    <h3> Рекомендовані відео </h3>
     <div class="video12">
         <iframe src="https://www.youtube.com/embed/CMnmsaJ6qew/xFa2_PVMeDQ?rel=0" allowfullscreen="" frameborder="0"></iframe>
+        <h3> Рекомендовані відео </h3>
         <div class="video_small">
-            <img src="http://img.youtube.com/vi/CMnmsaJ6qew/2.jpg" tabindex="2" />
-            <img src="http://img.youtube.com/vi/xFa2_PVMeDQ/1.jpg" tabindex="2"/>
-            <img src="http://img.youtube.com/vi/WFhzzJjRncI/1.jpg" tabindex="2"/>
+            <div class="img">
+                <img src="http://img.youtube.com/vi/CMnmsaJ6qew/2.jpg" tabindex="2"/>
+                <div class="one"> <p>Вечірнє Богослужіння </br> церкви Благодаті </br></p> 
+                    <p class="view"> 60 переглядів</p> <p class="date"> 06.07.16 </p>
+                </div> 
+                <img src="http://img.youtube.com/vi/xFa2_PVMeDQ/1.jpg" tabindex="2"/>
+                <div class="two"> <p>Вечірнє Богослужіння </br> церкви Благодаті </br></p> 
+                    <p class="view"> 60 переглядів</p> <p class="date"> 06.07.16 </p>
+                </div> 
+                <img src="http://img.youtube.com/vi/WFhzzJjRncI/1.jpg" tabindex="2"/>
+                <div class="three"> <p>Вечірнє Богослужіння </br> церкви Благодаті </br></p> 
+                    <p class="view"> 60 переглядів</p> <p class="date"> 06.07.16 </p>
+                </div>
+            </div>
+             
         </div>
-
+        <!--div class="btn_date"> 
+            <h5> 06.07.16 </h5> 
+            <p class="view" > Переглянуто 26 разів  </p> 
+            <p> Вечірнє Богослужіння церкви Благодаті </p>
+            <hr>
+         </div-->
+        <h4> <a href="#"> Всі трансляції</a> </h4>
+        <a href="#"><button> ЗАПИТАННЯ ПАСТОРУ </button> </a>
     </div>
-
-
     <script>
         var IMG = document.querySelectorAll('.video12 img'),
                 IFRAME = document.querySelector('.video12 iframe');
@@ -205,9 +227,7 @@
 
 </div> <!-- end broadcasting-->
 <div class="latest_news">
-    <h3> Останні новини </h3>
-    <div class="news">
-        <div class="new">
+    <h3> Останні новини </h3>    <div class="new">
             <img src="images/arhiv.jpg">
             <p> Вечірнє Богослужіння <br> церкви Благодаті </p>
             <a href="#"> Описание новости </a>
@@ -225,7 +245,6 @@
             <a href="#"> Описание новости </a>
             <h5> 06.07.16 </h5>
         </div>
-    </div>
 </div> <!-- end latest_news-->
 <div class="contact">
     <h1> Контакти </h1>
