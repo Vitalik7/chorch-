@@ -59,7 +59,19 @@
     background: linear-gradient(#FF6347, #FF6347) #FF6347;
     transition: 0.2s;
 }
-
+.pluso {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    background: transparent;
+    text-align: left;
+    font-size: 0;
+    line-height: 0;
+}
 
 
 
